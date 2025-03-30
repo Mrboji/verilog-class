@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Dec 10 16:08:26 2022
+# Process ID: 7920
+# Current directory: E:/FPGA/digital_system_design/snake_game
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12372 E:\FPGA\digital_system_design\snake_game\snake_game.xpr
+# Log file: E:/FPGA/digital_system_design/snake_game/vivado.log
+# Journal file: E:/FPGA/digital_system_design/snake_game\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA/digital_system_design/snake_game/snake_game.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'E:/FPGA/digital_system_design/my_snake_game/ip_repo/my_snake_game_ip_1.0/hdl/imports/fpga_snake-master/font_rom.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'font_romv1' is locked:
+* Current project part 'xc7a35tcsg324-1' and the part 'xc7z020clg484-1' used to customize the IP 'font_romv1' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 808.316 ; gain = 182.113
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 10 16:49:11 2022...

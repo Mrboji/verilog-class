@@ -1,0 +1,566 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 11 19:10:28 2022
+# Process ID: 12936
+# Current directory: E:/FPGA/VGA/VGA.runs/synth_1
+# Command line: vivado.exe -log VGA_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA_top.tcl
+# Log file: E:/FPGA/VGA/VGA.runs/synth_1/VGA_top.vds
+# Journal file: E:/FPGA/VGA/VGA.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source VGA_top.tcl -notrace
+Command: synth_design -top VGA_top -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20220 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 430.230 ; gain = 97.570
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'VGA_top' [E:/FPGA/VGA/VGA.srcs/sources_1/new/VGA_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'trial_1' [E:/FPGA/VGA/VGA.srcs/sources_1/new/trial_1.v:23]
+	Parameter hsync_end bound to: 10'b0001011111 
+	Parameter hdat_begin bound to: 10'b0010001111 
+	Parameter hdat_end bound to: 10'b1100001111 
+	Parameter hpixel_end bound to: 10'b1100011111 
+	Parameter vsync_end bound to: 10'b0000000001 
+	Parameter vdat_begin bound to: 10'b0000100010 
+	Parameter vdat_end bound to: 10'b1000000010 
+	Parameter vline_end bound to: 10'b1000001100 
+INFO: [Synth 8-6155] done synthesizing module 'trial_1' (1#1) [E:/FPGA/VGA/VGA.srcs/sources_1/new/trial_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'trial_2' [E:/FPGA/VGA/VGA.srcs/sources_1/new/trial_2.v:23]
+	Parameter hsync_end bound to: 10'b0001011111 
+	Parameter hdat_begin bound to: 10'b0010001111 
+	Parameter hdat_end bound to: 10'b1100001111 
+	Parameter hpixel_end bound to: 10'b1100011111 
+	Parameter vsync_end bound to: 10'b0000000001 
+	Parameter vdat_begin bound to: 10'b0000100010 
+	Parameter vdat_end bound to: 10'b1000000010 
+	Parameter vline_end bound to: 10'b1000001100 
+INFO: [Synth 8-6155] done synthesizing module 'trial_2' (2#1) [E:/FPGA/VGA/VGA.srcs/sources_1/new/trial_2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'trial_3' [E:/FPGA/VGA/VGA.srcs/sources_1/new/trial_3.v:23]
+	Parameter hsync_end bound to: 10'b0001011111 
+	Parameter hdat_begin bound to: 10'b0010001111 
+	Parameter hdat_end bound to: 10'b1100001111 
+	Parameter hpixel_end bound to: 10'b1100011111 
+	Parameter vsync_end bound to: 10'b0000000001 
+	Parameter vdat_begin bound to: 10'b0000100010 
+	Parameter vdat_end bound to: 10'b1000000010 
+	Parameter vline_end bound to: 10'b1000001100 
+	Parameter char_line00 bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter char_line01 bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter char_line02 bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter char_line03 bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter char_line04 bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter char_line05 bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter char_line06 bound to: 96'b111111111111100000001111111111100000000000011111111110011000000000000000000000111100000000000000 
+	Parameter char_line07 bound to: 96'b000111111100000000000001111100000000000001110000000001111100000000000000000001111100000000000000 
+	Parameter char_line08 bound to: 96'b000011111100000000000001111000000000000111000000000000011100000000000000000001111110000000000000 
+	Parameter char_line09 bound to: 96'b000001111100000000000001110000000000011110000000000000001100000000000000000011001110000000000000 
+	Parameter char_line10 bound to: 96'b000001111110000000000011110000000000111100000000000000000110000000000000000011001111000000000000 
+	Parameter char_line11 bound to: 96'b000000111110000000000011100000000000111100000000000000000110000000000000000110000111000000000000 
+	Parameter char_line12 bound to: 96'b000000111111000000000111100000000001111000000000000000000000000000000000000110000111100000000000 
+	Parameter char_line13 bound to: 96'b000000011111000000000111000000000011111000000000000000000000000000000000001100000111100000000000 
+	Parameter char_line14 bound to: 96'b000000011111100000001111000000000011110000000000000000000000000000000000001100000011110000000000 
+	Parameter char_line15 bound to: 96'b000000001111100000001110000000000011110000000000000000000000000000000000011000000011110000000000 
+	Parameter char_line16 bound to: 96'b000000001111110000011100000000000011110000000000000000000000000000000000011000000001111000000000 
+	Parameter char_line17 bound to: 96'b000000000111110000011100000000000011110000000000000000000000000000000000110000000001111000000000 
+	Parameter char_line18 bound to: 96'b000000000111111000111000000000000011110000000000001111111111111000000000110000000000111100000000 
+	Parameter char_line19 bound to: 96'b000000000011111000111000000000000011111000000000000000111110000000000001111111111111111100000000 
+	Parameter char_line20 bound to: 96'b000000000011111101110000000000000011111000000000000000011110000000000011100000000000011110000000 
+	Parameter char_line21 bound to: 96'b000000000001111111110000000000000001111000000000000000011110000000000011000000000000011110000000 
+	Parameter char_line22 bound to: 96'b000000000001111111100000000000000000111100000000000000011110000000000111000000000000001111000000 
+	Parameter char_line23 bound to: 96'b000000000000111111100000000000000000111100000000000000011110000000000110000000000000001111000000 
+	Parameter char_line24 bound to: 96'b000000000000111111000000000000000000011110000000000000011110000000001110000000000000000111100000 
+	Parameter char_line25 bound to: 96'b000000000000011111000000000000000000000111100000000000111110000000001110000000000000000111100000 
+	Parameter char_line26 bound to: 96'b000000000000011110000000000000000000000001111000000011100000000000011110000000000000000111110000 
+	Parameter char_line27 bound to: 96'b000000000000011110000000000000000000000000001111111100000000000011111111110000000000111111111110 
+	Parameter char_line28 bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter char_line29 bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter char_line30 bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter char_line31 bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+WARNING: [Synth 8-5788] Register cnt_clk_reg in module trial_3 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/FPGA/VGA/VGA.srcs/sources_1/new/trial_3.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'trial_3' (3#1) [E:/FPGA/VGA/VGA.srcs/sources_1/new/trial_3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'trial_4' [E:/FPGA/VGA/VGA.srcs/sources_1/new/trial_4.v:23]
+	Parameter hsync_end bound to: 10'b0001011111 
+	Parameter hdat_begin bound to: 10'b0010001111 
+	Parameter hdat_end bound to: 10'b1100001111 
+	Parameter hpixel_end bound to: 10'b1100011111 
+	Parameter vsync_end bound to: 10'b0000000001 
+	Parameter vdat_begin bound to: 10'b0000100010 
+	Parameter vdat_end bound to: 10'b1000000010 
+	Parameter vline_end bound to: 10'b1000001100 
+	Parameter wideth bound to: 10 - type: integer 
+	Parameter length bound to: 10 - type: integer 
+WARNING: [Synth 8-5788] Register cnt_clk_reg in module trial_4 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/FPGA/VGA/VGA.srcs/sources_1/new/trial_4.v:45]
+WARNING: [Synth 8-5788] Register move_enable_reg in module trial_4 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/FPGA/VGA/VGA.srcs/sources_1/new/trial_4.v:100]
+INFO: [Synth 8-6155] done synthesizing module 'trial_4' (4#1) [E:/FPGA/VGA/VGA.srcs/sources_1/new/trial_4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4_1' [E:/FPGA/VGA/VGA.srcs/sources_1/new/mux4_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4_1' (5#1) [E:/FPGA/VGA/VGA.srcs/sources_1/new/mux4_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_top' (6#1) [E:/FPGA/VGA/VGA.srcs/sources_1/new/VGA_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 487.230 ; gain = 154.570
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 487.230 ; gain = 154.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 487.230 ; gain = 154.570
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/FPGA/VGA/VGA.srcs/constrs_1/new/trial1.xdc]
+Finished Parsing XDC File [E:/FPGA/VGA/VGA.srcs/constrs_1/new/trial1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/FPGA/VGA/VGA.srcs/constrs_1/new/trial1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VGA_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VGA_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 815.414 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 815.414 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 815.414 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 815.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 815.414 ; gain = 482.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 815.414 ; gain = 482.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 815.414 ; gain = 482.754
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "key_value" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "key_value" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/FPGA/VGA/VGA.srcs/sources_1/new/trial_4.v:137]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/FPGA/VGA/VGA.srcs/sources_1/new/trial_4.v:140]
+INFO: [Synth 8-5546] ROM "move_enable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_direct" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v_direct" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "move_enable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_direct" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v_direct" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 815.414 ; gain = 482.754
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 12    
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 4     
++---XORs : 
+	   2 Input     12 Bit         XORs := 3     
++---Registers : 
+	               18 Bit    Registers := 1     
+	               12 Bit    Registers := 10    
+	               10 Bit    Registers := 10    
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   8 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 12    
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module trial_1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input     12 Bit         XORs := 1     
++---Registers : 
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+Module trial_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input     12 Bit         XORs := 1     
++---Registers : 
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   8 Input     12 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module trial_3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module trial_4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 6     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input     12 Bit         XORs := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 4     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 2     
+Module mux4_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "move_enable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_direct0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_direct" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v_direct" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'u1/v_dat_reg[0]' (FD) to 'u1/v_dat_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u1/h_dat_reg[0]' (FD) to 'u1/h_dat_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u2/v_dat_reg[0]' (FD) to 'u2/v_dat_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u2/h_dat_reg[0]' (FD) to 'u2/h_dat_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u4/v_dat_reg[0]' (FD) to 'u4/v_dat_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u4/h_dat_reg[0]' (FD) to 'u4/h_dat_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u1/v_dat_reg[1]' (FD) to 'u1/v_dat_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u1/h_dat_reg[1]' (FD) to 'u1/h_dat_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u2/v_dat_reg[1]' (FD) to 'u2/v_dat_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u2/h_dat_reg[1]' (FD) to 'u2/h_dat_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u4/v_dat_reg[1]' (FD) to 'u4/v_dat_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u4/h_dat_reg[1]' (FD) to 'u4/h_dat_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u1/v_dat_reg[2]' (FD) to 'u1/v_dat_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u1/h_dat_reg[2]' (FD) to 'u1/h_dat_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u2/v_dat_reg[2]' (FD) to 'u2/v_dat_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u2/h_dat_reg[2]' (FD) to 'u2/h_dat_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u4/v_dat_reg[2]' (FD) to 'u4/v_dat_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u4/h_dat_reg[2]' (FD) to 'u4/h_dat_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u1/v_dat_reg[4]' (FD) to 'u1/v_dat_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u1/h_dat_reg[4]' (FD) to 'u1/h_dat_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u2/v_dat_reg[4]' (FD) to 'u2/v_dat_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u2/h_dat_reg[4]' (FD) to 'u2/h_dat_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u4/v_dat_reg[4]' (FD) to 'u4/v_dat_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u4/h_dat_reg[4]' (FD) to 'u4/h_dat_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u1/v_dat_reg[5]' (FD) to 'u1/v_dat_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u1/h_dat_reg[5]' (FD) to 'u1/h_dat_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u2/v_dat_reg[5]' (FD) to 'u2/v_dat_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u2/h_dat_reg[5]' (FD) to 'u2/h_dat_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u4/v_dat_reg[5]' (FD) to 'u4/v_dat_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u4/h_dat_reg[5]' (FD) to 'u4/h_dat_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u1/v_dat_reg[6]' (FD) to 'u1/v_dat_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u1/h_dat_reg[6]' (FD) to 'u1/h_dat_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u2/v_dat_reg[6]' (FD) to 'u2/v_dat_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u2/h_dat_reg[6]' (FD) to 'u2/h_dat_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u4/v_dat_reg[6]' (FD) to 'u4/v_dat_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u4/h_dat_reg[6]' (FD) to 'u4/h_dat_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u1/v_dat_reg[8]' (FD) to 'u1/v_dat_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u1/h_dat_reg[8]' (FD) to 'u1/h_dat_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u2/v_dat_reg[8]' (FD) to 'u2/v_dat_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u2/h_dat_reg[8]' (FD) to 'u2/h_dat_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u4/v_dat_reg[8]' (FD) to 'u4/v_dat_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u4/h_dat_reg[8]' (FD) to 'u4/h_dat_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u1/v_dat_reg[9]' (FD) to 'u1/v_dat_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u1/h_dat_reg[9]' (FD) to 'u1/h_dat_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u2/v_dat_reg[9]' (FD) to 'u2/v_dat_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u2/h_dat_reg[9]' (FD) to 'u2/h_dat_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u4/v_dat_reg[9]' (FD) to 'u4/v_dat_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u4/h_dat_reg[9]' (FD) to 'u4/h_dat_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u1/v_dat_reg[10]' (FD) to 'u1/v_dat_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u1/h_dat_reg[10]' (FD) to 'u1/h_dat_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u2/v_dat_reg[10]' (FD) to 'u2/v_dat_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u2/h_dat_reg[10]' (FD) to 'u2/h_dat_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u4/v_dat_reg[10]' (FD) to 'u4/v_dat_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u4/h_dat_reg[10]' (FD) to 'u4/h_dat_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u3/data_reg[0]' (FDR) to 'u3/data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u3/data_reg[1]' (FDR) to 'u3/data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u3/data_reg[2]' (FDR) to 'u3/data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u3/data_reg[3]' (FDR) to 'u3/data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u3/data_reg[4]' (FDR) to 'u3/data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u3/data_reg[5]' (FDR) to 'u3/data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u3/data_reg[6]' (FDR) to 'u3/data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u3/data_reg[7]' (FDR) to 'u3/data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u3/data_reg[8]' (FDR) to 'u3/data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u3/data_reg[9]' (FDR) to 'u3/data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u3/data_reg[10]' (FDR) to 'u3/data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u1/data_reg[0]' (FDE) to 'u1/data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u2/data_reg[0]' (FD) to 'u2/data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u4/data_reg[0]' (FDC) to 'u4/data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u1/data_reg[1]' (FDE) to 'u1/data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u2/data_reg[1]' (FD) to 'u2/data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u4/data_reg[1]' (FDC) to 'u4/data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u1/data_reg[2]' (FDE) to 'u1/data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u2/data_reg[2]' (FD) to 'u2/data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u4/data_reg[2]' (FDC) to 'u4/data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u1/data_reg[4]' (FDE) to 'u1/data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u2/data_reg[4]' (FD) to 'u2/data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u4/data_reg[4]' (FDC) to 'u4/data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u1/data_reg[5]' (FDE) to 'u1/data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u2/data_reg[5]' (FD) to 'u2/data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u4/data_reg[5]' (FDC) to 'u4/data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u1/data_reg[6]' (FDE) to 'u1/data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u2/data_reg[6]' (FD) to 'u2/data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u4/data_reg[6]' (FDC) to 'u4/data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u1/data_reg[8]' (FDE) to 'u1/data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u2/data_reg[8]' (FD) to 'u2/data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u4/data_reg[8]' (FDC) to 'u4/data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u1/data_reg[9]' (FDE) to 'u1/data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u2/data_reg[9]' (FD) to 'u2/data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u4/data_reg[9]' (FDC) to 'u4/data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u1/data_reg[10]' (FDE) to 'u1/data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u2/data_reg[10]' (FD) to 'u2/data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u4/data_reg[10]' (FDC) to 'u4/data_reg[11]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 815.414 ; gain = 482.754
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 815.414 ; gain = 482.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 815.414 ; gain = 482.754
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 840.418 ; gain = 507.758
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 840.418 ; gain = 507.758
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 840.418 ; gain = 507.758
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 840.418 ; gain = 507.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 840.418 ; gain = 507.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 840.418 ; gain = 507.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 840.418 ; gain = 507.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    19|
+|3     |LUT1   |    10|
+|4     |LUT2   |    67|
+|5     |LUT3   |    57|
+|6     |LUT4   |    49|
+|7     |LUT5   |    81|
+|8     |LUT6   |   214|
+|9     |MUXF7  |     2|
+|10    |FDCE   |    84|
+|11    |FDPE   |     8|
+|12    |FDRE   |    74|
+|13    |IBUF   |     7|
+|14    |OBUF   |    14|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+--------+------+
+|      |Instance |Module  |Cells |
++------+---------+--------+------+
+|1     |top      |        |   689|
+|2     |  u1     |trial_1 |   104|
+|3     |  u2     |trial_2 |   100|
+|4     |  u3     |trial_3 |   176|
+|5     |  u4     |trial_4 |   284|
++------+---------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 840.418 ; gain = 507.758
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 840.418 ; gain = 179.574
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 840.418 ; gain = 507.758
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 840.418 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+132 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 840.418 ; gain = 520.398
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 840.418 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/FPGA/VGA/VGA.runs/synth_1/VGA_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file VGA_top_utilization_synth.rpt -pb VGA_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 11 19:10:51 2022...

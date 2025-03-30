@@ -1,0 +1,56 @@
+#include "xparameters.h"
+#include "xstatus.h"
+#include "xintc.h"
+#include "xil_exception.h"
+#include "my_seg_show_ip.h"
+#include "my_snake_game_ip.h"
+#include "sleep.h"
+#include "xil_printf.h"
+
+#define MY_SNAKE_GAME_IP_BASE_ADDR XPAR_MY_SNAKE_GAME_IP_0_S0_AXI_BASEADDR
+
+#define BTN_OFFSET MY_SNAKE_GAME_IP_S0_AXI_SLV_REG0_OFFSET
+#define SW_OFFSET  MY_SNAKE_GAME_IP_S0_AXI_SLV_REG2_OFFSET
+#define RES_OFFSET MY_SNAKE_GAME_IP_S0_AXI_SLV_REG1_OFFSET
+#define EN_OFFSET MY_SNAKE_GAME_IP_S0_AXI_SLV_REG3_OFFSET
+
+
+#define LED (*((u32*)0x40000000))
+#define LEDT (*((u32*)0x40000004))
+#define BTN (*((u32*)0x40000008))
+#define BTNT (*((u32*)0x4000000C))
+
+int main()
+{
+	u8 val;
+	u16 i;
+	print("my_snake_game!\r\n");
+	BTNT = 0xff ;
+	LEDT = 0x00;
+	val=(u8)BTN;
+	MY_SNAKE_GAME_IP_mWriteReg(MY_SNAKE_GAME_IP_BASE_ADDR, SW_OFFSET,((val&0x20)!=0));
+
+	MY_SNAKE_GAME_IP_mWriteReg(MY_SNAKE_GAME_IP_BASE_ADDR,EN_OFFSET,1);
+	while(1)
+	{
+		val=(u8)BTN;
+		MY_SNAKE_GAME_IP_mWriteReg(MY_SNAKE_GAME_IP_BASE_ADDR, RES_OFFSET,(val&0x10)!=0);
+		MY_SNAKE_GAME_IP_mWriteReg(MY_SNAKE_GAME_IP_BASE_ADDR, BTN_OFFSET,(val&0x0f));
+		if(++i==500)
+		{
+			print("my_snake_game!\r\n");
+			i=0;
+			LED=~LED;
+		}
+		usleep(1000);
+	}
+	return 0;
+}
+
+
+
+
+
+
+
+

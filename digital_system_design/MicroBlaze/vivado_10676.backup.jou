@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Dec  9 22:14:51 2022
+# Process ID: 10676
+# Current directory: E:/FPGA/digital_system_design/MicroBlaze
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent612 E:\FPGA\digital_system_design\MicroBlaze\MicroBlaze.xpr
+# Log file: E:/FPGA/digital_system_design/MicroBlaze/vivado.log
+# Journal file: E:/FPGA/digital_system_design/MicroBlaze\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA/digital_system_design/MicroBlaze/MicroBlaze.xpr
+launch_sdk -workspace E:/FPGA/digital_system_design/MicroBlaze/MicroBlaze.sdk -hwspec E:/FPGA/digital_system_design/MicroBlaze/MicroBlaze.sdk/MicroBlazeDemo1_wrapper.hdf
+update_compile_order -fileset sources_1

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="MicroBlazeDemo1_my_snake_game_ip_0_0_synth_1" LaunchDir="E:/FPGA/digital_system_design/_my_snake_game_/_my_snake_game_.runs/MicroBlazeDemo1_my_snake_game_ip_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="E:/FPGA/digital_system_design/_my_snake_game_/_my_snake_game_.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="MicroBlazeDemo1_my_snake_game_ip_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

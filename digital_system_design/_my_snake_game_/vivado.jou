@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Feb 22 14:18:42 2023
+# Process ID: 2248
+# Current directory: E:/FPGA/digital_system_design/_my_snake_game_
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7640 E:\FPGA\digital_system_design\_my_snake_game_\_my_snake_game_.xpr
+# Log file: E:/FPGA/digital_system_design/_my_snake_game_/vivado.log
+# Journal file: E:/FPGA/digital_system_design/_my_snake_game_\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA/digital_system_design/_my_snake_game_/_my_snake_game_.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace E:/FPGA/digital_system_design/_my_snake_game_/_my_snake_game_.sdk -hwspec E:/FPGA/digital_system_design/_my_snake_game_/_my_snake_game_.sdk/MicroBlazeDemo1_wrapper.hdf

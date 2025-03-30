@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/A_my_project/FPGA/zhuanyeke/alarm_clock/alarm_clock.srcs/sources_1/new/alarm_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alarm_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/A_my_project/FPGA/zhuanyeke/alarm_clock/alarm_clock.srcs/sim_1/new/test_alarm_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_alarm_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/A_my_project/FPGA/zhuanyeke/alarm_clock/alarm_clock.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

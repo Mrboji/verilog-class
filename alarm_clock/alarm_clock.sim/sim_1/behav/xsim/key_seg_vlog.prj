@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../alarm_clock.srcs/sources_1/new/kd_encoder.v" \
+"../../../../alarm_clock.srcs/sources_1/new/seg_show.v" \
+"../../../../alarm_clock.srcs/sources_1/new/key_seg.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

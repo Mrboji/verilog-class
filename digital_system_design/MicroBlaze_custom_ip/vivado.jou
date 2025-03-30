@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Dec  8 15:31:37 2022
+# Process ID: 14816
+# Current directory: E:/FPGA/digital_system_design/MicroBlaze_custom_ip
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13044 E:\FPGA\digital_system_design\MicroBlaze_custom_ip\MicroBlaze_custom_ip.xpr
+# Log file: E:/FPGA/digital_system_design/MicroBlaze_custom_ip/vivado.log
+# Journal file: E:/FPGA/digital_system_design/MicroBlaze_custom_ip\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA/digital_system_design/MicroBlaze_custom_ip/MicroBlaze_custom_ip.xpr
+update_compile_order -fileset sources_1
+file copy -force E:/FPGA/digital_system_design/MicroBlaze_custom_ip/MicroBlaze_custom_ip.runs/impl_1/MicroBlazeDemo1_wrapper.sysdef E:/FPGA/digital_system_design/MicroBlaze_custom_ip/MicroBlaze_custom_ip.sdk/MicroBlazeDemo1_wrapper.hdf
+
+launch_sdk -workspace E:/FPGA/digital_system_design/MicroBlaze_custom_ip/MicroBlaze_custom_ip.sdk -hwspec E:/FPGA/digital_system_design/MicroBlaze_custom_ip/MicroBlaze_custom_ip.sdk/MicroBlazeDemo1_wrapper.hdf

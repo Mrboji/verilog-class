@@ -1,0 +1,24 @@
+17:19:23 **** Incremental Build of configuration Debug for project MicroBlaze_intr ****
+make all 
+make: Nothing to be done for 'all'.
+17:19:48 **** Incremental Build of configuration Debug for project MicroBlaze_intr ****
+make all 
+make: Nothing to be done for 'all'.
+15:19:58 **** Build of configuration Debug for project MicroBlaze_intr_bsp_xintc_example_1 ****
+make all 
+'Building file: ../src/xintc_example.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xintc_example.o" -I../../MicroBlaze_intr_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xintc_example.d" -MT"src/xintc_example.o" -o "src/xintc_example.o" "../src/xintc_example.c"
+'Finished building: ../src/xintc_example.c'
+' '
+'Building target: MicroBlaze_intr_bsp_xintc_example_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroBlaze_intr_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MicroBlaze_intr_bsp_xintc_example_1.elf"  ./src/xintc_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MicroBlaze_intr_bsp_xintc_example_1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MicroBlaze_intr_bsp_xintc_example_1.elf  |tee "MicroBlaze_intr_bsp_xintc_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8868	    328	   3268	  12464	   30b0	MicroBlaze_intr_bsp_xintc_example_1.elf
+'Finished building: MicroBlaze_intr_bsp_xintc_example_1.elf.size'
+' '

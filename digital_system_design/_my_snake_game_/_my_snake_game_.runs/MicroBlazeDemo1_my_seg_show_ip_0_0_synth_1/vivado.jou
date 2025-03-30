@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Feb 15 14:35:16 2023
+# Process ID: 16548
+# Current directory: E:/FPGA/digital_system_design/_my_snake_game_/_my_snake_game_.runs/MicroBlazeDemo1_my_seg_show_ip_0_0_synth_1
+# Command line: vivado.exe -log MicroBlazeDemo1_my_seg_show_ip_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MicroBlazeDemo1_my_seg_show_ip_0_0.tcl
+# Log file: E:/FPGA/digital_system_design/_my_snake_game_/_my_snake_game_.runs/MicroBlazeDemo1_my_seg_show_ip_0_0_synth_1/MicroBlazeDemo1_my_seg_show_ip_0_0.vds
+# Journal file: E:/FPGA/digital_system_design/_my_snake_game_/_my_snake_game_.runs/MicroBlazeDemo1_my_seg_show_ip_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source MicroBlazeDemo1_my_seg_show_ip_0_0.tcl -notrace

@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Dec 10 16:04:40 2022
+# Process ID: 12824
+# Current directory: E:/FPGA/digital_system_design/_my_snake_game_
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10360 E:\FPGA\digital_system_design\_my_snake_game_\_my_snake_game_.xpr
+# Log file: E:/FPGA/digital_system_design/_my_snake_game_/vivado.log
+# Journal file: E:/FPGA/digital_system_design/_my_snake_game_\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA/digital_system_design/_my_snake_game_/_my_snake_game_.xpr
+open_bd_design {E:/FPGA/digital_system_design/_my_snake_game_/_my_snake_game_.srcs/sources_1/bd/MicroBlazeDemo1/MicroBlazeDemo1.bd}
+update_compile_order -fileset sources_1
+regenerate_bd_layout
+save_bd_design
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {btn_tri_io[7]} {btn_tri_io[6]} {btn_tri_io[5]} {btn_tri_io[4]} {btn_tri_io[3]} {btn_tri_io[2]} {btn_tri_io[1]} {btn_tri_io[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {rgb_0[7]} {rgb_0[6]} {rgb_0[5]} {rgb_0[4]} {rgb_0[3]} {rgb_0[2]} {rgb_0[1]} {rgb_0[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list hsync_0]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list vsync_0]]
+place_ports {btn_tri_io[1]} U4
+place_ports {btn_tri_io[3]} V1
+place_ports {btn_tri_io[0]} R17
+place_ports {btn_tri_io[2]} R11
+place_ports {btn_tri_io[4]} R15
+place_ports {btn_tri_io[5]} P5
+place_ports {btn_tri_io[6]} P4
+place_ports {btn_tri_io[7]} P3
+set_property PULLTYPE PULLUP [get_ports [list {btn_tri_io[4]}]]
+set_property PULLTYPE PULLDOWN [get_ports [list {btn_tri_io[4]}]]
+set_property PULLTYPE PULLDOWN [get_ports [list {btn_tri_io[1]}]]
+set_property PULLTYPE PULLDOWN [get_ports [list {btn_tri_io[0]}]]
+set_property PULLTYPE PULLDOWN [get_ports [list {btn_tri_io[3]}]]
+set_property PULLTYPE PULLDOWN [get_ports [list {btn_tri_io[2]}]]
+place_ports {rgb_0[0]} E6
+place_ports {rgb_0[1]} E5
+place_ports {rgb_0[2]} B6
+place_ports {rgb_0[3]} A6
+place_ports {rgb_0[4]} A5
+place_ports {rgb_0[5]} F5
+place_ports {rgb_0[6]} C6
+place_ports {rgb_0[7]} C5
+place_ports hsync_0 D7
+place_ports vsync_0 C4
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file mkdir E:/FPGA/digital_system_design/_my_snake_game_/_my_snake_game_.sdk
+file copy -force E:/FPGA/digital_system_design/_my_snake_game_/_my_snake_game_.runs/impl_1/MicroBlazeDemo1_wrapper.sysdef E:/FPGA/digital_system_design/_my_snake_game_/_my_snake_game_.sdk/MicroBlazeDemo1_wrapper.hdf
+
+launch_sdk -workspace E:/FPGA/digital_system_design/_my_snake_game_/_my_snake_game_.sdk -hwspec E:/FPGA/digital_system_design/_my_snake_game_/_my_snake_game_.sdk/MicroBlazeDemo1_wrapper.hdf

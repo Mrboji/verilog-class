@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# updatemem v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Wed Dec  7 17:19:29 2022
+# Process ID: 6936
+# Current directory: E:/FPGA/digital_system_design/MicroBlaze_intr
+# Command line: updatemem.exe -mode batch -source D:/Xilinx/SDK/2018.3/scripts/updatemem/main.tcl -notrace -tclargs -meminfo E:/FPGA/digital_system_design/MicroBlaze_intr/MicroBlaze_intr.sdk/MicroBlazeDemo1_wrapper_hw_platform_0/MicroBlazeDemo1_wrapper.mmi -data E:\FPGA\digital_system_design\MicroBlaze_intr\MicroBlaze_intr.sdk\MicroBlaze_intr\Debug\MicroBlaze_intr.elf -proc MicroBlazeDemo1_i/microblaze_0 -bit E:/FPGA/digital_system_design/MicroBlaze_intr/MicroBlaze_intr.sdk/MicroBlazeDemo1_wrapper_hw_platform_0/MicroBlazeDemo1_wrapper.bit -out E:/FPGA/digital_system_design/MicroBlaze_intr/MicroBlaze_intr.sdk/MicroBlazeDemo1_wrapper_hw_platform_0/download.bit -force
+# Log file: E:/FPGA/digital_system_design/MicroBlaze_intr/updatemem.log
+# Journal file: E:/FPGA/digital_system_design/MicroBlaze_intr\updatemem.jou
+#-----------------------------------------------------------
+source D:/Xilinx/SDK/2018.3/scripts/updatemem/main.tcl -notrace
+ Loading bitfile E:/FPGA/digital_system_design/MicroBlaze_intr/MicroBlaze_intr.sdk/MicroBlazeDemo1_wrapper_hw_platform_0/MicroBlazeDemo1_wrapper.bit
+Loading data files...
+Updating memory content...
+Creating bitstream...
+Writing bitstream E:/FPGA/digital_system_design/MicroBlaze_intr/MicroBlaze_intr.sdk/MicroBlazeDemo1_wrapper_hw_platform_0/download.bit...
+  update_mem: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 514.973 ; gain = 429.566
+INFO: [Common 17-206] Exiting updatemem at Wed Dec  7 17:19:37 2022...

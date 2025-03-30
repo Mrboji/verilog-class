@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May 23 23:28:09 2022
+# Process ID: 4488
+# Current directory: E:/FPGA/VGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7328 E:\FPGA\VGA\VGA.xpr
+# Log file: E:/FPGA/VGA/vivado.log
+# Journal file: E:/FPGA/VGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA/VGA/VGA.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test_trial1 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+synth_design -rtl -name rtl_1

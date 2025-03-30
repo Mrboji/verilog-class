@@ -1,0 +1,32 @@
+#include "stdio.h"
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "sleep.h"
+#include "xbasic_types.h"
+
+#define MY_PWM_IP_BASE_ADDR XPAR_MY_PWM_IP_0_S0_AXI_BASEADDR
+
+#define PWM1_EN_OFFSET    MY_PWM_IP_S0_AXI_SLV_REG0_OFFSET
+#define PWM1_DUTY_OFFSET  MY_PWM_IP_S0_AXI_SLV_REG1_OFFSET
+#define PWM2_EN_OFFSET    MY_PWM_IP_S0_AXI_SLV_REG2_OFFSET
+#define PWM2_DUTY_OFFSET  MY_PWM_IP_S0_AXI_SLV_REG3_OFFSET
+
+
+int main()
+{
+	u32 pwm_duty;
+
+	xil_printf("PWM User IP Test!\n");
+
+	while(1)
+	{
+
+	}
+}
+
+
+
+
+
+
+

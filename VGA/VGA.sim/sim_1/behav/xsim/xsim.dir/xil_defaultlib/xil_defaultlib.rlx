@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+E:/FPGA/VGA/VGA.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+E:/FPGA/VGA/VGA.srcs/sim_1/new/test_trial1.v,1652187946,verilog,,,,test_trial1,,,,,,,,
+E:/FPGA/VGA/VGA.srcs/sim_1/new/test_trial3.v,1652249713,verilog,,,,test_trial3,,,,,,,,
+E:/FPGA/VGA/VGA.srcs/sources_1/new/trial_1.v,1652188003,verilog,,E:/FPGA/VGA/VGA.srcs/sim_1/new/test_trial1.v,,trial_1,,,,,,,,
+E:/FPGA/VGA/VGA.srcs/sources_1/new/trial_3.v,1652266056,verilog,,E:/FPGA/VGA/VGA.srcs/sim_1/new/test_trial3.v,,trial_3,,,,,,,,

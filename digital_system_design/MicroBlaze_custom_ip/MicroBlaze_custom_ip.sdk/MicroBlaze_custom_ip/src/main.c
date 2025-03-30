@@ -1,0 +1,47 @@
+#include "stdio.h"
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "sleep.h"
+#include "xbasic_types.h"
+#include "my_pwm_ip.h"
+
+#define MY_PWM_IP_BASE_ADDR XPAR_MY_PWM_IP_0_S0_AXI_BASEADDR
+
+#define PWM1_EN_OFFSET    MY_PWM_IP_S0_AXI_SLV_REG0_OFFSET
+#define PWM1_DUTY_OFFSET  MY_PWM_IP_S0_AXI_SLV_REG1_OFFSET
+#define PWM2_EN_OFFSET    MY_PWM_IP_S0_AXI_SLV_REG2_OFFSET
+#define PWM2_DUTY_OFFSET  MY_PWM_IP_S0_AXI_SLV_REG3_OFFSET
+
+
+int main()
+{
+	u32 pwm_duty=0;
+	u8 flag=0;
+
+	xil_printf("PWM User IP Test!\n");
+	MY_PWM_IP_mWriteReg(MY_PWM_IP_BASE_ADDR,PWM1_EN_OFFSET,1);
+	MY_PWM_IP_mWriteReg(MY_PWM_IP_BASE_ADDR,PWM2_EN_OFFSET,1);
+	while(1)
+	{
+		if(!flag)
+			pwm_duty=pwm_duty+1000;
+		else
+			pwm_duty=pwm_duty-1000;
+		if(pwm_duty==100000)
+			flag=1;
+		else if(pwm_duty==0)
+			flag=0;
+
+		MY_PWM_IP_mWriteReg(MY_PWM_IP_BASE_ADDR,PWM1_DUTY_OFFSET,pwm_duty);
+		MY_PWM_IP_mWriteReg(MY_PWM_IP_BASE_ADDR,PWM2_DUTY_OFFSET,pwm_duty);
+
+		usleep(10000);
+	}
+}
+
+
+
+
+
+
+

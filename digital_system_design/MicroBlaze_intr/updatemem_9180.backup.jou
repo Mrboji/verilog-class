@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# updatemem v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Wed Dec  7 16:40:35 2022
+# Process ID: 9180
+# Current directory: e:/FPGA/digital_system_design/MicroBlaze_intr
+# Command line: updatemem.exe -mode batch -source D:/Xilinx/SDK/2018.3/scripts/updatemem/main.tcl -notrace -tclargs -meminfo E:/FPGA/digital_system_design/MicroBlaze_intr/MicroBlaze_intr.sdk/MicroBlazeDemo1_wrapper_hw_platform_1/MicroBlazeDemo1_wrapper.mmi -data E:\FPGA\digital_system_design\MicroBlaze_intr\MicroBlaze_intr.sdk\MicroBlaze_int\Debug\MicroBlaze_int.elf -proc MicroBlazeDemo1_i/microblaze_0 -bit E:/FPGA/digital_system_design/MicroBlaze_intr/MicroBlaze_intr.sdk/MicroBlazeDemo1_wrapper_hw_platform_1/MicroBlazeDemo1_wrapper.bit -out E:/FPGA/digital_system_design/MicroBlaze_intr/MicroBlaze_intr.sdk/MicroBlazeDemo1_wrapper_hw_platform_1/download.bit -force
+# Log file: e:/FPGA/digital_system_design/MicroBlaze_intr/updatemem.log
+# Journal file: e:/FPGA/digital_system_design/MicroBlaze_intr\updatemem.jou
+#-----------------------------------------------------------
+source D:/Xilinx/SDK/2018.3/scripts/updatemem/main.tcl -notrace

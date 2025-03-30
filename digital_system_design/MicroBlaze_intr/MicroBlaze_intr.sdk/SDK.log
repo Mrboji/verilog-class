@@ -1,0 +1,47 @@
+17:18:16 INFO  : Registering command handlers for SDK TCF services
+17:18:17 INFO  : Launching XSCT server: xsct.bat -interactive E:\FPGA\digital_system_design\MicroBlaze_intr\MicroBlaze_intr.sdk\temp_xsdb_launch_script.tcl
+17:18:19 INFO  : XSCT server has started successfully.
+17:18:19 INFO  : Successfully done setting XSCT server connection channel  
+17:18:19 INFO  : Successfully done setting SDK workspace  
+17:18:19 INFO  : Processing command line option -hwspec E:/FPGA/digital_system_design/MicroBlaze_intr/MicroBlaze_intr.sdk/MicroBlazeDemo1_wrapper.hdf.
+17:19:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:19:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "xilinx tul 1234-tulA" && level==0} -index 0' command is executed.
+17:19:41 INFO  : FPGA configured successfully with bitstream "E:/FPGA/digital_system_design/MicroBlaze_intr/MicroBlaze_intr.sdk/MicroBlazeDemo1_wrapper_hw_platform_0/download.bit"
+17:19:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "xilinx tul 1234-tulA" && level==0} -index 0' command is executed.
+17:19:49 INFO  : 'fpga -state' command is executed.
+17:19:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:19:49 INFO  : Jtag cable 'xilinx tul 1234-tulA' is selected.
+17:19:49 INFO  : 'jtag frequency' command is executed.
+17:19:49 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:19:49 INFO  : Context for processor 'microblaze_0' is selected.
+17:19:49 INFO  : Processor reset is completed for 'microblaze_0'.
+17:19:49 INFO  : Context for processor 'microblaze_0' is selected.
+17:19:49 INFO  : The application 'E:/FPGA/digital_system_design/MicroBlaze_intr/MicroBlaze_intr.sdk/MicroBlaze_intr/Debug/MicroBlaze_intr.elf' is downloaded to processor 'microblaze_0'.
+17:19:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "xilinx tul 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "xilinx tul 1234-tulA"} -index 0
+dow E:/FPGA/digital_system_design/MicroBlaze_intr/MicroBlaze_intr.sdk/MicroBlaze_intr/Debug/MicroBlaze_intr.elf
+----------------End of Script----------------
+
+17:19:49 INFO  : Memory regions updated for context PA
+17:19:49 INFO  : Memory regions updated for context PA
+17:19:49 INFO  : Context for processor 'microblaze_0' is selected.
+17:19:49 INFO  : 'con' command is executed.
+17:19:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "xilinx tul 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+17:19:49 INFO  : Launch script is exported to file 'E:\FPGA\digital_system_design\MicroBlaze_intr\MicroBlaze_intr.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_microblaze_intr.elf_on_local.tcl'
+17:20:49 INFO  : Disconnected from the channel tcfchan#1.
+15:16:33 INFO  : Registering command handlers for SDK TCF services
+15:16:33 INFO  : Launching XSCT server: xsct.bat -interactive E:\FPGA\digital_system_design\MicroBlaze_intr\MicroBlaze_intr.sdk\temp_xsdb_launch_script.tcl
+15:16:35 INFO  : XSCT server has started successfully.
+15:16:35 INFO  : Successfully done setting XSCT server connection channel  
+15:16:36 INFO  : Successfully done setting SDK workspace  
+15:16:36 INFO  : Processing command line option -hwspec E:/FPGA/digital_system_design/MicroBlaze_intr/MicroBlaze_intr.sdk/MicroBlazeDemo1_wrapper.hdf.
+15:16:36 INFO  : Checking for hwspec changes in the project MicroBlazeDemo1_wrapper_hw_platform_0.
+15:19:58 INFO  : Example project MicroBlaze_intr_bsp_xintc_example_1 has been created successfully.

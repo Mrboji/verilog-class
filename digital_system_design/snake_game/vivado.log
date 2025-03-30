@@ -1,0 +1,125 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Feb 15 21:02:36 2023
+# Process ID: 1772
+# Current directory: E:/FPGA/digital_system_design/snake_game
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13864 E:\FPGA\digital_system_design\snake_game\snake_game.xpr
+# Log file: E:/FPGA/digital_system_design/snake_game/vivado.log
+# Journal file: E:/FPGA/digital_system_design/snake_game\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA/digital_system_design/snake_game/snake_game.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'E:/FPGA/digital_system_design/my_snake_game/ip_repo/my_snake_game_ip_1.0/hdl/imports/fpga_snake-master/font_rom.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'font_romv1' is locked:
+* Current project part 'xc7a35tcsg324-1' and the part 'xc7z020clg484-1' used to customize the IP 'font_romv1' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 798.531 ; gain = 169.816
+update_compile_order -fileset sources_1
+WARNING: [Vivado 12-4172] The following IPs are either missing output products or output products are not up-to-date. Since these IPs are locked, no update to the output products cant be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/ip/font_romv1/font_romv1.xci
+
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/ip/font_romv1/font_romv1.xci
+
+WARNING: [IP_Flow 19-2162] IP 'font_romv1' is locked:
+* Current project part 'xc7a35tcsg324-1' and the part 'xc7z020clg484-1' used to customize the IP 'font_romv1' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 961.949 ; gain = 64.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/top.v:21]
+INFO: [Synth 8-6157] synthesizing module 'direction_gen' [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/directon_gen.v:21]
+INFO: [Synth 8-6157] synthesizing module 'button_jitter' [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/button_jitter.v:21]
+	Parameter interval bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'button_jitter' (1#1) [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/button_jitter.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'direction_gen' (2#1) [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/directon_gen.v:21]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/vga_sync.v:23]
+	Parameter hsync_end bound to: 10'b0001011111 
+	Parameter hdat_begin bound to: 10'b0010001111 
+	Parameter hdat_end bound to: 10'b1100001111 
+	Parameter hpixel_end bound to: 10'b1100011111 
+	Parameter vsync_end bound to: 10'b0000000001 
+	Parameter vdat_begin bound to: 10'b0000100010 
+	Parameter vdat_end bound to: 10'b1000000010 
+	Parameter vline_end bound to: 10'b1000001100 
+WARNING: [Synth 8-5788] Register cnt_clk_reg in module vga_sync is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/vga_sync.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (3#1) [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/vga_sync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'graph' [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/graph.v:21]
+	Parameter apple_rgb bound to: 8'b11100000 
+	Parameter death_rgb bound to: 8'b11100000 
+	Parameter snake_rgb bound to: 8'b00011100 
+	Parameter border_rgb bound to: 8'b00000011 
+	Parameter blank_rgb bound to: 8'b00000000 
+INFO: [Synth 8-6157] synthesizing module 'clk_divide' [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/clk_divide.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'clk_divide' (4#1) [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/clk_divide.v:21]
+INFO: [Synth 8-6157] synthesizing module 'random_gen' [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/random_gen.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'random_gen' (5#1) [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/random_gen.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/graph.v:129]
+WARNING: [Synth 8-5788] Register snake_x_reg[0] in module graph is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/graph.v:106]
+WARNING: [Synth 8-5788] Register snake_y_reg[0] in module graph is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/graph.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'graph' (6#1) [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/graph.v:21]
+INFO: [Synth 8-6157] synthesizing module 'text' [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/text.v:21]
+INFO: [Synth 8-6157] synthesizing module 'font_romv1' [E:/FPGA/digital_system_design/snake_game/.Xil/Vivado-1772-DESKTOP-37A9H0N/realtime/font_romv1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'font_romv1' (7#1) [E:/FPGA/digital_system_design/snake_game/.Xil/Vivado-1772-DESKTOP-37A9H0N/realtime/font_romv1_stub.v:6]
+INFO: [Synth 8-226] default block is never used [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/text.v:53]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/text.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'text' (8#1) [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/text.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'top' (9#1) [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/imports/fpga_snake-master/top.v:21]
+WARNING: [Synth 8-3331] design text has unconnected port video_on
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1016.543 ; gain = 119.402
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1016.543 ; gain = 119.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1016.543 ; gain = 119.402
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/digital_system_design/snake_game/snake_game.srcs/sources_1/ip/font_romv1/font_romv1.dcp' for cell 'snake_text/font_unit'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/constrs_1/new/snake_game.xdc]
+Finished Parsing XDC File [E:/FPGA/digital_system_design/snake_game/snake_game.srcs/constrs_1/new/snake_game.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1304.203 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1354.117 ; gain = 456.977
+30 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1354.117 ; gain = 456.977
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 15 22:17:46 2023...

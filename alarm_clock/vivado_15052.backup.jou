@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Feb 15 14:01:00 2023
+# Process ID: 15052
+# Current directory: E:/FPGA/zhuanyeke/alarm_clock
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15324 E:\FPGA\zhuanyeke\alarm_clock\alarm_clock.xpr
+# Log file: E:/FPGA/zhuanyeke/alarm_clock/vivado.log
+# Journal file: E:/FPGA/zhuanyeke/alarm_clock\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA/zhuanyeke/alarm_clock/alarm_clock.xpr
+update_compile_order -fileset sources_1

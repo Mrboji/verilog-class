@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# updatemem v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Wed Feb 22 14:21:43 2023
+# Process ID: 14464
+# Current directory: E:/FPGA/digital_system_design/_my_snake_game_
+# Command line: updatemem.exe -mode batch -source D:/Xilinx/SDK/2018.3/scripts/updatemem/main.tcl -notrace -tclargs -meminfo E:/FPGA/digital_system_design/_my_snake_game_/_my_snake_game_.sdk/MicroBlazeDemo1_wrapper_hw_platform_0/MicroBlazeDemo1_wrapper.mmi -data D:/Xilinx/SDK/2018.3/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc MicroBlazeDemo1_i/microblaze_0 -bit E:/FPGA/digital_system_design/_my_snake_game_/_my_snake_game_.sdk/MicroBlazeDemo1_wrapper_hw_platform_0/MicroBlazeDemo1_wrapper.bit -out E:/FPGA/digital_system_design/_my_snake_game_/_my_snake_game_.sdk/MicroBlazeDemo1_wrapper_hw_platform_0/download.bit -force
+# Log file: E:/FPGA/digital_system_design/_my_snake_game_/updatemem.log
+# Journal file: E:/FPGA/digital_system_design/_my_snake_game_\updatemem.jou
+#-----------------------------------------------------------
+source D:/Xilinx/SDK/2018.3/scripts/updatemem/main.tcl -notrace
